@@ -6,13 +6,13 @@
 
 function sumOfArray(arr){
     var sum = 0
-    for (var i = 0; i < (arr.length); i++){
-    	sum += (arr.length)[i]
-    }
-    return sumOfArray 
+    	for (i = 0; i<arr.length; i++) {
+    		sum += arr[i]
+    	
+    	}
+    return sum
 }
 
-console.log ( sumOfArray(arr))
 
 console.assert(sumOfArray([1, 2]) === 3);
 console.assert(sumOfArray([]) === 0);
@@ -28,11 +28,8 @@ console.assert(sumOfArray([10, 9, 8]) === 27);
 
 function sum(a, b){
 
-
+    return (a + b)
 }
-
-
-console.log " the sum of theses"
 
 console.assert(sum(8, 11) === 19);
 console.assert(sum(4, 100) === 104);
@@ -47,7 +44,7 @@ console.assert(sum(4, 100) === 104);
 function GCD(a, b){
     
 }
-
+   
 console.assert(GCD(5,1) === 1);
 console.assert(GCD(15,3) === 3);
 console.assert(GCD(15,5) === 5);
@@ -60,7 +57,7 @@ console.assert(GCD(50,20) === 10);
  */
 
 function LCM(a, b){
-    
+    // YOUR CODE HERE
 }
 
 console.assert(LCM(10,10) === 10)
@@ -79,7 +76,7 @@ console.assert(LCM(0,1) === 1)
  */
 
 function fizzbuzz(N){
-    
+    // YOUR CODE HERE
 }
 
 console.assert(fizzbuzz(1) === ".")
