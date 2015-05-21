@@ -63,6 +63,7 @@ function GCD(number1, number2) {
     };
 
     return result;
+   
 
 };
 
@@ -77,45 +78,29 @@ console.assert(GCD(50, 20) === 10);
  *
  * write a function that prints out the Least Common Multiple of two numbers
  */
+    function LCM(a, b) { 
+
+        var mult = a * b 
+
+        if (a > 0) {
+         
+         return  mult/GCD(a, b) 
+
+                } else {
+
+                    return b
+                }
+
+}
 
 
-// function LCM(num1, num2) {
-//     function GCD(number1, number2) {
-
-//     var result;
-//     var lowerBound;
-
-//     if (number1 <= number2)
-
-//         lowerBound = number1;
-
-//     else
-
-//         lowerBound = number2;
+        console.assert(LCM(10, 10) === 10)
+        console.assert(LCM(2, 5) === 10)
+        console.assert(LCM(3, 6) === 6)
+        console.assert(LCM(0, 1) === 1)
 
 
-//     for (var i = 1; i <= lowerBound; i++) {
-
-//         if ((number1 % i === 0) && (number2 % i === 0))
-//             result = i
-
-//     };
-
-//     return (num1 * num2)/ GCD
-
-// };
-
-    
-
-    
-// }
-
-
-//         console.assert(LCM(10, 10) === 10)
-//         console.assert(LCM(2, 5) === 10)
-//         console.assert(LCM(3, 6) === 6)
-//         console.assert(LCM(0, 1) === 1)
-
+        
         /**
          * Part 4
          *
@@ -127,28 +112,55 @@ console.assert(GCD(50, 20) === 10);
          */
 
         // function fizzbuzz(N) {
-        //         // YOUR CODE HERE  
-        //         for (i = 1; i <= 100; i++) {
+               
+        //         var fizzy = ""
 
-        //             return (N)
+        //         for (i = 1; i <= N; i++) {
+
+        //             // return (N)
 
         //         }
 
         //         if (N % 3 !== 0 && N % 5 !== 0) {
-        //             console.log(".")
+        //             fizzy += "."
 
         //         } else if (N % 3 === 0) {
-        //             console.log("..fizz")
+        //             fizzy += "fizz"
 
         //         } else if (N % 5 === 0) {
-        //             console.log("..buzz")
+        //             fizzy += "buzz"
 
         //         } else if (N % 3 === 0 && N % 5 === 0) {
-        //             console.log("..fizzbuzz")
+        //             fizzy += "fizzbuzz"
+
+        //         } else {
+        //             fizzy += ".."
         //         }
+        //         return fizzy
         //     }
+
         //     console.assert(fizzbuzz(1) === ".")
         //     console.assert(fizzbuzz(2) === "..")
         //     console.assert(fizzbuzz(3) === "..fizz")
         //     console.assert(fizzbuzz(5) === "..fizz.buzz")
         //     console.assert(fizzbuzz(10) === "..fizz.buzzfizz..fizzfizzbuzz")
+
+//             function fizzbuzz(N) {
+//     var fizzbuzz = ""
+//     for (i = 1; i <= N; i++) {
+//         if (i % 15 === 0) {
+//             fizzbuzz += "fizzbuzz";
+//         } else if (i % 3 === 0) {
+//             fizzbuzz += "fizz";
+//         } else if (i % 5 === 0) {
+//             fizzbuzz += "buzz";
+//         } else {
+//             fizzbuzz += ".";
+//         }
+
+//     }
+//     return fizzbuzz
+// }
+
+
+
